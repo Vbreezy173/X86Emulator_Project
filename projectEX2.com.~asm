@@ -1,0 +1,25 @@
+assume cs:code,ds:code
+code segment
+
+org 100h
+;mov,add,and sub
+start:
+mov ax,1000h
+add bx,ax
+add cx,ax
+add dx,ax
+
+sub ax,500h
+sub bx,250h
+sub cx,150h
+sub dx,50h
+
+
+
+
+
+int 20h
+code ends
+
+end start
+

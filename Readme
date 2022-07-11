@@ -1,0 +1,16 @@
+This program is a X86 8/16-bit emulator written in C++. It features some basic architeaure from the x86 proccersor. The program implements the following features-
+1. General-Purpose Registers (GPR)
+2. Memory
+3. Instruction Pointer (IP regester)
+The program takes a x86 assembly code file compiled to machine code (.com) and exuctues the commands.
+The program can execuate the following X86 instructions-
+1.)XCHG
+2.)ADD
+3.)SUB
+4.)MOV
+5.)INC
+6.)DEC
+7.)INT 21h
+Each instruction moves data to and from the registers and depending on the data in the register certain operation can be done. An example is displaying "Hello World".
+
+I have provided 3 .com files as examples that can be used in this program to be run. 

@@ -1,0 +1,30 @@
+assume cs:code,ds:code
+code segment
+
+org 100h
+;mov,inc,and xchg
+start:
+mov al,10h
+mov bl,15h
+mov cl,20h
+mov dl,25h
+
+inc al
+inc bl
+inc cl
+inc dl
+
+xchg al,bl
+xchg cl,dl
+xchg dl,cl
+
+
+
+
+
+
+int 20h
+code ends
+
+end start
+

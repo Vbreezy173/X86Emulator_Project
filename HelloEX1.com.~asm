@@ -1,0 +1,26 @@
+assume cs:code,ds:code
+code segment
+
+org 100h
+;prints out hello using int 21h
+start:
+mov dl,'h'
+mov ah,6
+int 21h
+mov dl,'e'
+int 21h
+mov dl, 'l'
+int 21h
+mov dl, 'l'
+int 21h
+mov dl, 'o'
+int 21h
+
+
+
+
+int 20h
+code ends
+
+end start
+
